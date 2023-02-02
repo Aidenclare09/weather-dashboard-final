@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#city-weather {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-5px)
+}
+
+#searches {
+    position: absolute;
+}
+
+.bg-primary {
+    background-color: #7c2ff8;
+}
+
+.hide {
+    display: none;
+}
