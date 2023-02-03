@@ -18,14 +18,14 @@
         <h1 class="row justify-content-center">Weather Dashboard</h1>
     </header>
 
-    <!-- Search bar-->
+    <!-- Search bar & History-->
     <main>
         <div class="container-fluid m-3">
             <div class="row ">
                 <div class="col-3 h-10">
                     <h2>Search for a City:</h2>
                 <form id="city-form">
-                    <input type="text" placeholder="What Location?" class="w-100 p-0" id="search-text">
+                    <input type="text" placeholder="What Location?" class="w-100 p-9" id="search-text">
 
                     <div class="d-grid gap-2 py-2 border-bottom">
                         <button class="btn btn-primary" id="search-btn" type="submit">Search</button>
@@ -36,7 +36,8 @@
                     </div>
                 </div>
 
-                <div class="col-sm-10 m-1 border hide current h-75">
+                <div id="search-bar"
+                    class="col-sm-12 m-2 border hide current h-75">
                     <h2 id="city-name" class="d-inline"></h2><img id="city-weather">
                     <p id="temp"></p>
                     <p id="wind"></p>
@@ -45,7 +46,7 @@
             </div>
         
             <div class="row">
-                <div class="col-10 offset-3 mb-1 5-day forecast"><h3>5-Day Forecast:</h3></div>
+                <div class="col-10 offset-4 mb-1 5-day forecast"><h3>5-Day Forecast:</h3></div>
             </div>
            
             <div class="row">
@@ -53,7 +54,7 @@
 
                 <!-- Widget Day #1-->
                
-                <div class="col-1 offset-2 widgets">
+                <div class="col-1 offset-1 widgets width-1">
                     <h4 id="date-1"></h4>
                     <img id="forecast-image-1">
                     <p id="forecast-temp-1"></p>
@@ -108,16 +109,14 @@
                     <p id="forecast-wind-5"></p>
                     <p id="forecast-humidity-5"></p>
                 </div>
-        
             </div>
- 
-            
         </div>
     </main>
 
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
